@@ -1,19 +1,28 @@
 <?php
 
 echo"boucle for : \n";
-$forSum = 1;
-for($i=0;$i<100;$i++)
+$forSum = 0;
+for($i=0;$i<=100;$i++)
 {
-    $forSum+=1;
+    $forSum+=$i;
 }
 echo $forSum."\n";
 
 echo"boucle while : \n";
-$whileSum = 1;
+$whileSum = 0;
 $i=0;
-while($i<100)
+while($i<=100)
 {
-    $whileSum+=1;
+    $whileSum+=$i;
     $i++;
 }
 echo $whileSum."\n";
+
+echo"Recursive : \n";
+function recursiveSum($nb)
+{
+    if($nb <=100)
+        return $nb+recursiveSum($nb+1);
+}
+
+echo recursiveSum(0)."\n";

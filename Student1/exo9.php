@@ -31,12 +31,10 @@ function tree($lines)
     {
         if($i <= ($lines/2))
         {
-            echo str_repeat('a', $i);
-            echo "\n";
+            echo str_repeat('a', $i)."\n";
         }else{
 
-            echo str_repeat('a', ($lines-$i));
-            echo "\n";
+            echo str_repeat('a', ($lines-$i))."\n";
         }
     }
 }

@@ -7,3 +7,5 @@ if($age<23)
 }else{
     echo "non";
 }
+
+echo $age<23? "oui" : "non";

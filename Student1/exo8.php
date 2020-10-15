@@ -2,15 +2,15 @@
 
 for($i=1;$i<100;$i++)
 {
-    if($i%3 === 0)
+    if($i%15 === 0)
     {
-        echo "fizz\n";
+        echo "fizzbuzz\n";
     }elseif ($i%5 === 0)
     {
         echo "buzz\n";
-    }elseif($i%15 === 0)
+    }elseif($i%3 === 0)
     {
-        echo "fizzbuzz\n";
+        echo "fizz\n";
     }else{
         echo $i."\n";
     }
